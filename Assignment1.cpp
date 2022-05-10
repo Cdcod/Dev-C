@@ -24,21 +24,31 @@ void xuat (sinhvien sv[], int n)
 }
 void max (sinhvien sv[], int n)
 {
-	int i;
+	int i,temp;
 	float max = sv[0].GRADE;
 	for (i = 0; i<n; i++)
 		if (max < sv[i].GRADE)
+		{
 			max = sv[i].GRADE;
-	cout<<"The highest grade is: "<<max<<endl;
+			temp = i;
+		}
+	cout<<"The Student have the highest grade is: "<<endl;
+	cout<<sv[temp].ID<<endl;
+	cout<<sv[temp].GRADE<<endl;
 }
 void min (sinhvien sv[], int n)
 {
-	int i;
+	int i,temp;
 	float min = sv[0].GRADE;
 	for (i = 0; i<n; i++)
 		if (min > sv[i].GRADE)
+		{
 			min = sv[i].GRADE;
-	cout<<"The lowest grade is: "<<min<<endl;
+			temp = i;
+		}
+	cout<<"The Student have the lowest grade is: "<<endl;
+	cout<<sv[temp].ID<<endl;
+	cout<<sv[temp].GRADE<<endl;
 }
 void hoanvi (float x,float y)
 {
