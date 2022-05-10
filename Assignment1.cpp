@@ -105,33 +105,52 @@ void program (sinhvien sv[], int n, int key)
 			case 2:
 			{
 				cout<<"2. Show the student list"<<endl;
-				xuat(sv,n);
+				if ( n > 0)
+					xuat(sv,n);
+				else
+					cout<<"\nThe student list is empty";
 				break;
 			}
 			case 3:
 			{
 				cout<<"3. Show the highest grade"<<endl;
-				max(sv,n);
+				if ( n > 0)
+					max(sv,n);
+				else
+					cout<<"\nThe student list is empty";
 				break;
 			}
 			case 4:
 			{
 				cout<<"4. Show the lowest grade"<<endl;
-				min(sv,n);
+				if ( n > 0)
+					min(sv,n);
+				else
+					cout<<"\nThe student list is empty";
 				break;
 			}
 			case 5:
 			{
 				cout<<"5. Sort the list ascending"<<endl;
-				tang(sv,n);
-				cout<<"Sort successfully"<<endl;
+				if ( n > 0)
+				{
+					tang(sv,n);
+					cout<<"Sort successfully"<<endl;
+				}
+				else
+					cout<<"Sort fail, the student list is empty";
 				break;
 			}
 			case 6:
 			{
 				cout<<"6. Sort the list descending"<<endl;
-				giam(sv,n);
-				cout<<"Sort successfully"<<endl;
+				if (n > 0)
+				{
+					giam(sv,n);
+					cout<<"Sort successfully"<<endl;
+				}
+				else
+					cout<<"Sort fail, the student list is empty";
 				break;
 			}
 			case 0:
