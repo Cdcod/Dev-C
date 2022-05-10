@@ -108,7 +108,7 @@ void program (sinhvien sv[], int n, int key)
 				if ( n > 0)
 					xuat(sv,n);
 				else
-					cout<<"\nThe student list is empty";
+					cout<<"The student list is empty"<<endl;
 				break;
 			}
 			case 3:
@@ -117,7 +117,7 @@ void program (sinhvien sv[], int n, int key)
 				if ( n > 0)
 					max(sv,n);
 				else
-					cout<<"\nThe student list is empty";
+					cout<<"The student list is empty"<<endl;
 				break;
 			}
 			case 4:
@@ -126,7 +126,7 @@ void program (sinhvien sv[], int n, int key)
 				if ( n > 0)
 					min(sv,n);
 				else
-					cout<<"\nThe student list is empty";
+					cout<<"The student list is empty"<<endl;
 				break;
 			}
 			case 5:
@@ -138,7 +138,7 @@ void program (sinhvien sv[], int n, int key)
 					cout<<"Sort successfully"<<endl;
 				}
 				else
-					cout<<"Sort fail, the student list is empty";
+					cout<<"Sort fail, the student list is empty"<<endl;
 				break;
 			}
 			case 6:
@@ -150,7 +150,7 @@ void program (sinhvien sv[], int n, int key)
 					cout<<"Sort successfully"<<endl;
 				}
 				else
-					cout<<"Sort fail, the student list is empty";
+					cout<<"Sort fail, the student list is empty"<<endl;
 				break;
 			}
 			case 0:
